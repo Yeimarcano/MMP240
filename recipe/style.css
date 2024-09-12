@@ -1,0 +1,19 @@
+body{background-color:rgb(244, 232, 216);
+    border-color: rgb(132, 79, 33);
+    border-style: solid;
+    border-width: 2px; 
+    width: 75%;
+    padding-left: 15px;
+    }
+
+h1 { color: rgb(182, 40, 19);
+
+    }
+
+h2, h3{ color: rgb(239, 70, 70);
+}
+
+img { border: solid;
+    border-width: 3px;
+    border-color: brown;
+}

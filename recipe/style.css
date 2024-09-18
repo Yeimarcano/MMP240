@@ -1,32 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+CU:wght@100..400&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+CU:wght@100..400&family=Sacramento&display=swap');
 
 
 body{background-color:rgb(244, 232, 216);
     width: 75%;
     padding-left: 15px;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    line-height: 1.5 em;
+    font-size: 12pt;
+    line-height: 1.6em;
     
 }
 
 h1 { color: rgb(182, 40, 19);
     font-family: "Playwrite CU", cursive;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: weight;
     font-style: normal;
+    font-size: 28pt;
 }
 
 h2, h3{ color: rgb(239, 70, 70);
-    font-family: "Playwrite CU", cursive;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;}
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;}
 
 img { border: solid;
-    border-width: 3px;
-    border-color: brown;}
+    border-width: 8px;
+    border-color: rgb(240, 85, 50);
+    border-style:groove;
+}

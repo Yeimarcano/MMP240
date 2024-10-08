@@ -1,0 +1,10 @@
+header { 
+    padding: 3em 1em;    /* padding-top:3em;padding-left:2em;padding-bottom:3em; first is top&bottom, right&left*/
+    background-image: url("images/herobanner.jpg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+#logo { 
+    width: 30%;
+}

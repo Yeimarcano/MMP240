@@ -1,10 +1,56 @@
+body{
+    font-family: Raleway, Montserrat, Roboto, sans-serif;
+}
+
 header { 
     padding: 3em 1em;    /* padding-top:3em;padding-left:2em;padding-bottom:3em; first is top&bottom, right&left*/
     background-image: url("images/herobanner.jpg");
     background-repeat: no-repeat;
-    background-size: 80%;
+
+  
 }
 
 #logo { 
     width: 30%;
+    margin-left: 20px;
+
 }
+
+.btn{
+    color: white;
+    background-color: rgba(245, 242, 220,0.5);
+    border: solid 1px whitesmoke;
+    padding: 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+nav{
+    background-color:#AF516B ;
+    padding: 1px;
+    
+}
+nav li{
+    display: inline-block;
+    margin-right: 1em;
+    padding-right: 1em;
+    border-right: solid 1px white;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #AF516B;
+    
+}
+
+.header-content .btn{ 
+    background-image: url(images/play_arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+
+}
+

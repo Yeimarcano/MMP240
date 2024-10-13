@@ -1,56 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
-    font-family: Raleway, Montserrat, Roboto, sans-serif;
+    margin: 40px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
 }
-
-header { 
-    padding: 3em 1em;    /* padding-top:3em;padding-left:2em;padding-bottom:3em; first is top&bottom, right&left*/
-    background-image: url("images/herobanner.jpg");
-    background-repeat: no-repeat;
-
+   
   
+header { 
+   /* padding: 3em 1em;     padding-top:3em;padding-left:2em;padding-bottom:3em; first is top&bottom, right&left*/
+    background: url("images/herobanner.jpg") lightgray -1.957px -104.763px / 100% no-repeat;
+    width: 1362px;
+    height: 447px;
+    flex-shrink: 0;
+}
+.header-content{
+    margin-left: 24px;
 }
 
 #logo { 
-    width: 30%;
-    margin-left: 20px;
+    padding-top: 1.5em;
+    width: 530px;
 
 }
 
 .btn{
-    color: white;
     background-color: rgba(245, 242, 220,0.5);
     border: solid 1px whitesmoke;
-    padding: 15px;
+    padding: 1em;
+    padding-right: 1.5em;
     border-radius: 6px;
     text-decoration: none;
     text-transform: uppercase;
 
 }
+nav, h2, .play{
+     font-family: "Montagu Slab", serif; 
+     font-optical-sizing: auto;
+     font-weight: weight;
+    font-style: normal;
+
+}
+
+.play{
+    color: white;
+    font-weight: 500;
+   
+}
+.btn:hover {
+    background-color: #AF516B;
+    border-color: #6c273b;
+    
+}
+.header-content .btn{ 
+    background-image: url(images/play_arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 2em;
+
+}
+
 nav{
     background-color:#AF516B ;
     padding: 1px;
     
+    
 }
 nav li{
+    font-weight: 500;
     display: inline-block;
     margin-right: 1em;
     padding-right: 1em;
+    padding-left: 0.15em;
     border-right: solid 1px white;
 }
 nav a{
     color: white;
     text-decoration: none;
+    float: left;
 }
 
-.btn:hover {
-    background-color: #AF516B;
-    
+h2{
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 0.75em;
+}
+.row:after {
+    display: table;
+    clear: both;
 }
 
-.header-content .btn{ 
-    background-image: url(images/play_arrow.svg);
-    background-repeat: no-repeat;
-    background-position: right center;
+.left-column{
+    float: left;
+    width: 65%;
+}
 
+.left-column h4{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 0.25em;
+}
+
+.left-column p{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.5em;
+
+}
+
+.right-column{
+    float: left;
+    width: 35%;
+}
+.right-column p{
+    font-size: 20px;
+    line-height: 1em;
+}
+
+
+strong{
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+footer{
+    font-weight: 100;
+    font-size: 14px;
+    margin-bottom: auto;
 }
 

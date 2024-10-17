@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1em;
+}
 body{
     margin: 40px;
     font-family: "Raleway", sans-serif;
@@ -9,13 +15,55 @@ body{
     font-style: normal;
     
 }
-   
-  
+#wrapper{
+    max-width: 1362px;
+}
+
+/************Typography*********/ 
+   /* Rem: rleative to the font size of the root element 16 px */
+
+   h2{ 
+    font-weight: 300;
+    font-size: 3.25rem;
+    line-height: 1.5em; 
+    }
+/* em: relative to the font size of this element */
+
+    nav, h2, .play{
+        font-family: "Montagu Slab", serif; 
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+
+    .play{
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+    }    
+
+    h4{
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 2em;
+    }
+    p{
+        font-size: 1.25rem;
+        line-height: 1.5em ;
+        font-weight: 400;
+    }
+    strong{
+        font-weight: 800;
+
+    }
+
+/****************header baner *********/
 header { 
    /* padding: 3em 1em;     padding-top:3em;padding-left:2em;padding-bottom:3em; first is top&bottom, right&left*/
-    background: url("images/herobanner.jpg") lightgray -1.957px -104.763px / 100% no-repeat;
-    width: 1362px;
-    height: 447px;
+    background: url("images/herobanner.jpg") -1.957px -104.763px / 100% no-repeat;
+    max-width: 1362px;
+    min-height: 447px;
     flex-shrink: 0;
 }
 .header-content{
@@ -24,7 +72,7 @@ header {
 
 #logo { 
     padding-top: 1.5em;
-    width: 530px;
+    max-width: 530px;
 
 }
 
@@ -34,23 +82,12 @@ header {
     padding: 1em;
     padding-right: 1.5em;
     border-radius: 6px;
-    text-decoration: none;
-    text-transform: uppercase;
+    
 
-}
-nav, h2, .play{
-     font-family: "Montagu Slab", serif; 
-     font-optical-sizing: auto;
-     font-weight: weight;
-    font-style: normal;
 
 }
 
-.play{
-    color: white;
-    font-weight: 500;
-   
-}
+
 .btn:hover {
     background-color: #AF516B;
     border-color: #6c273b;
@@ -67,74 +104,33 @@ nav, h2, .play{
 nav{
     background-color:#AF516B ;
     padding: 1px;
-    
+    max-width: 97.25% ;
+    padding: 1em 1em;
     
 }
 nav li{
     font-weight: 500;
     display: inline-block;
+    margin-left: 20px;
     margin-right: 1em;
-    padding-right: 1em;
-    padding-left: 0.15em;
+    padding-right: 0.75em;
     border-right: solid 1px white;
 }
 nav a{
     color: white;
     text-decoration: none;
-    float: left;
-}
-
-h2{
-    font-weight: 300;
-    font-size: 52px;
-    line-height: 0.75em;
-}
-.row:after {
-    display: table;
-    clear: both;
-}
-
-.left-column{
-    float: left;
-    width: 65%;
-}
-
-.left-column h4{
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 0.25em;
-}
-
-.left-column p{
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 1.5em;
 
 }
 
-.right-column{
-    float: left;
-    width: 35%;
-}
-.right-column p{
-    font-size: 20px;
-    line-height: 1em;
-}
-
-
-strong{
-    font-weight: 800;
-}
+           
 
 
 
 
-
-
-
+/* ********Footer****************/
 footer{
     font-weight: 100;
-    font-size: 14px;
+    font-size: 0.85rem;
     margin-bottom: auto;
 }
 

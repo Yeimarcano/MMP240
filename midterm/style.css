@@ -22,10 +22,11 @@ body{
 /************Typography*********/ 
    /* Rem: rleative to the font size of the root element 16 px */
 
-   h2{ 
+   .left-column h2{ 
     font-weight: 300;
     font-size: 3.25rem;
-    line-height: 1.5em; 
+    line-height: 1.25em; 
+    padding-top: 0.25em;
     }
 /* em: relative to the font size of this element */
 
@@ -36,21 +37,28 @@ body{
         font-style: normal;
     }
 
-    .play{
+    /* .play{
         color: white;
         font-weight: 500;
         text-decoration: none;
         text-transform: uppercase;
-    }    
+    }     */
 
-    h4{
+    main h3{
         font-size: 1rem;
         font-weight: 300;
-        line-height: 2em;
+        margin-top: 0;
+        margin-left: 0.5em;
     }
-    p{
+    .row p{
         font-size: 1.25rem;
         line-height: 1.5em ;
+        font-weight: 400;
+    }
+
+    .right-column p{
+        font-size: 1.28rem;
+        line-height: 1.75em;
         font-weight: 400;
     }
     strong{
@@ -76,6 +84,7 @@ header {
 
 }
 
+/* ***************BUTTON*****
 .btn{
     background-color: rgba(245, 242, 220,0.5);
     border: solid 1px whitesmoke;
@@ -83,10 +92,7 @@ header {
     padding-right: 1.5em;
     border-radius: 6px;
     
-
-
 }
-
 
 .btn:hover {
     background-color: #AF516B;
@@ -97,9 +103,8 @@ header {
     background-image: url(images/play_arrow.svg);
     background-repeat: no-repeat;
     background-position: right center;
-    padding-right: 2em;
+    padding-right: 2em; */
 
-}
 
 nav{
     background-color:#AF516B ;
@@ -119,10 +124,25 @@ nav li{
 nav a{
     color: white;
     text-decoration: none;
-
 }
 
-           
+/* ************Main*********/
+main{
+    margin: 1em 0em;
+    overflow: auto;
+    
+}
+main .left-column{
+    float: left;
+    width: 68%;
+}
+
+main .right-column{
+    margin-top: 5em;
+    float: right;
+    width: 28%;
+
+}
 
 
 
@@ -131,6 +151,7 @@ nav a{
 footer{
     font-weight: 100;
     font-size: 0.85rem;
-    margin-bottom: auto;
+    margin-bottom:auto;
+    clear: both;
 }
 

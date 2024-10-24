@@ -19,23 +19,25 @@ body{
     max-width: 1362px;
 }
 
-/************Typography*********/ 
+/***************************Typography************************************/ 
    /* Rem: rleative to the font size of the root element 16 px */
 
    .left-column h2{ 
+    font-family: "Montagu Slab", serif; 
+    font-optical-sizing: auto;
     font-weight: 300;
     font-size: 3.25rem;
-    line-height: 1.25em; 
-    padding-top: 0.25em;
+    line-height: 1.40em; 
+    padding-top: 0.5em;
     }
 /* em: relative to the font size of this element */
 
-    nav, h2, .play{
+    nav, h2, h3, h4{
         font-family: "Montagu Slab", serif; 
         font-optical-sizing: auto;
         font-weight: weight;
         font-style: normal;
-    }
+        }
 
     /* .play{
         color: white;
@@ -44,11 +46,13 @@ body{
         text-transform: uppercase;
     }     */
 
-    main h3{
-        font-size: 1rem;
+    .row h3{
+        font-family:"Raleway" ;
+        font-size: 1.10rem;
         font-weight: 300;
-        margin-top: 0;
-        margin-left: 0.5em;
+        line-height: 0;
+        margin-left: 0.2em;
+        
     }
     .row p{
         font-size: 1.25rem;
@@ -65,22 +69,35 @@ body{
         font-weight: 800;
 
     }
+    h2{
+        font-size:2rem;
+        font-weight: 300;
+        line-height: 1.25em; 
+        padding-top: 0.25em;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: 200;
+        padding-left: 1.5em;
+        line-height: 1.25em;
+
+    }
 
 /****************header baner *********/
 header { 
    /* padding: 3em 1em;     padding-top:3em;padding-left:2em;padding-bottom:3em; first is top&bottom, right&left*/
     background: url("images/herobanner.jpg") -1.957px -104.763px / 100% no-repeat;
-    max-width: 1362px;
-    min-height: 447px;
+    width: 1362px;
+    height: 447px;
     flex-shrink: 0;
 }
 .header-content{
-    margin-left: 24px;
+    margin-left: 30px;
 }
 
 #logo { 
     padding-top: 1.5em;
-    max-width: 530px;
+    width: 530px;
 
 }
 
@@ -126,6 +143,8 @@ nav a{
     text-decoration: none;
 }
 
+
+
 /* ************Main*********/
 main{
     margin: 1em 0em;
@@ -153,5 +172,6 @@ footer{
     font-size: 0.85rem;
     margin-bottom:auto;
     clear: both;
+    margin-top: 3em;
 }
 

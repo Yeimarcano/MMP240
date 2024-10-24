@@ -50,8 +50,7 @@ body{
         font-family:"Raleway" ;
         font-size: 1.10rem;
         font-weight: 300;
-        line-height: 0;
-        margin-left: 0.2em;
+        
         
     }
     .row p{
@@ -82,15 +81,38 @@ body{
         line-height: 1.25em;
 
     }
+    .card h4{
+        font-size: 1.10rem;
+        font-weight: 400;
+        line-height: 1em;
+
+    }
+    .card p{
+        font-size: 1rem;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
+    .card p, .card h4{
+        padding-top: 0.5em;
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+    }
 
 /****************header baner *********/
 header { 
-   /* padding: 3em 1em;     padding-top:3em;padding-left:2em;padding-bottom:3em; first is top&bottom, right&left*/
+    /* padding: 3em 1em;     padding-top:3em;padding-left:2em;padding-bottom:3em; first is top&bottom, right&left */
     background: url("images/herobanner.jpg") -1.957px -104.763px / 100% no-repeat;
     width: 1362px;
     height: 447px;
     flex-shrink: 0;
 }
+
+/* header{
+    background: url("images/HeroBanner2.jpg") no-repeat;
+    max-width: 100%;
+
+} */
+
 .header-content{
     margin-left: 30px;
 }
@@ -126,8 +148,9 @@ header {
 nav{
     background-color:#AF516B ;
     padding: 1px;
-    max-width: 97.25% ;
+    max-width: 97.55% ;
     padding: 1em 1em;
+    
     
 }
 nav li{
@@ -174,4 +197,33 @@ footer{
     clear: both;
     margin-top: 3em;
 }
+
+/*****************************Episodes*************** */
+.episodes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 321px;
+    margin-left: 1em;
+    margin-top: 3em;
+    background-color: rgb(255, 244, 249);
+    border-top: 1em;
+    border-style: solid;
+    border-color: #63446d;
+    box-shadow: 4px 4px 4px 2px rgba(224, 199, 252, 0.465);
+    border-radius: 10px;
+    flex-shrink: 1 1 auto;
+
+    
+
+}
+.card:last-child{
+    padding-bottom: 2em;
+}
+
+/* .card img{
+    
+    padding-top: 1em;
+} */
 

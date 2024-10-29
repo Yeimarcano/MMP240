@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
@@ -16,7 +16,7 @@ body{
     
 }
 #wrapper{
-    max-width: 1362px;
+    max-width: 1500px;
 }
 
 /***************************Typography************************************/ 
@@ -28,7 +28,7 @@ body{
     font-weight: 300;
     font-size: 3.25rem;
     line-height: 1.40em; 
-    padding-top: 0.5em;
+    padding-top: 0.30em;
     }
 /* em: relative to the font size of this element */
 
@@ -39,28 +39,31 @@ body{
         font-style: normal;
         }
 
-    /* .play{
+    .play{
         color: white;
         font-weight: 500;
         text-decoration: none;
         text-transform: uppercase;
-    }     */
+        padding-right: 0.5em;
+    }    
 
     .row h3{
         font-family:"Raleway" ;
         font-size: 1.10rem;
         font-weight: 300;
+        padding: 0em;
+        
         
         
     }
-    .row p{
+    .left-column p{ 
         font-size: 1.25rem;
         line-height: 1.5em ;
         font-weight: 400;
     }
 
     .right-column p{
-        font-size: 1.28rem;
+        font-size: 1.25rem;
         line-height: 1.75em;
         font-weight: 400;
     }
@@ -82,54 +85,55 @@ body{
 
     }
     .card h4{
-        font-size: 1.10rem;
+        font-size: 1.08rem;
         font-weight: 400;
-        line-height: 1em;
+        line-height: 1.05em;
+        padding-top: 0.5em;
 
     }
     .card p{
         font-size: 1rem;
         line-height: 1.5em;
         font-weight: 300;
+        padding-bottom: 0.75em;
+        padding-top: 0.25em;
     }
     .card p, .card h4{
-        padding-top: 0.5em;
-        padding-left: 0.25em;
-        padding-right: 0.25em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
     }
 
 /****************header baner *********/
+/* padding: 3em 1em;     padding-top:3em;padding-left:2em;padding-bottom:3em; first is top&bottom, right&left */
 header { 
-    /* padding: 3em 1em;     padding-top:3em;padding-left:2em;padding-bottom:3em; first is top&bottom, right&left */
-    background: url("images/herobanner.jpg") -1.957px -104.763px / 100% no-repeat;
-    width: 1362px;
-    height: 447px;
-    flex-shrink: 0;
+    
+    background: url("images/herobanner.jpg") no-repeat;
+    max-width: 100%;
+    height: 460px;
+    
+    
 }
 
-/* header{
-    background: url("images/HeroBanner2.jpg") no-repeat;
-    max-width: 100%;
 
-} */
 
 .header-content{
     margin-left: 30px;
 }
 
 #logo { 
-    padding-top: 1.5em;
-    width: 530px;
+    padding-top: 2em;
+    width: 510px;
+    margin-left: 0.5em;
 
 }
 
-/* ***************BUTTON*****
+/* ***************BUTTON******/
 .btn{
     background-color: rgba(245, 242, 220,0.5);
     border: solid 1px whitesmoke;
-    padding: 1em;
-    padding-right: 1.5em;
+    padding: 0.75em;
     border-radius: 6px;
+    margin-left: 1em;
     
 }
 
@@ -142,28 +146,35 @@ header {
     background-image: url(images/play_arrow.svg);
     background-repeat: no-repeat;
     background-position: right center;
-    padding-right: 2em; */
+    padding-right: 2em;} 
 
 
 nav{
     background-color:#AF516B ;
-    padding: 1px;
-    max-width: 97.55% ;
     padding: 1em 1em;
+    flex: 0 0 auto;
     
     
 }
 nav li{
     font-weight: 500;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 0.5em;
     margin-right: 1em;
     padding-right: 0.75em;
     border-right: solid 1px white;
+
 }
+
+
 nav a{
     color: white;
     text-decoration: none;
+}
+nav a:hover{
+    background-color:#632c3c;
+    padding: 0.5em;
+    border-radius: 10px;
 }
 
 
@@ -201,29 +212,50 @@ footer{
 /*****************************Episodes*************** */
 .episodes{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 1em;
 }
 .card{
-    width: 321px;
+    max-width: 310px;
     margin-left: 1em;
     margin-top: 3em;
-    background-color: rgb(255, 244, 249);
+    background-color: rgb(255, 253, 254);
     border-top: 1em;
     border-style: solid;
-    border-color: #63446d;
+    border-color: #6d4462;
     box-shadow: 4px 4px 4px 2px rgba(224, 199, 252, 0.465);
     border-radius: 10px;
-    flex-shrink: 1 1 auto;
+    
 
     
 
 }
 .card:last-child{
-    padding-bottom: 2em;
+    margin-bottom: 3em;
 }
 
-/* .card img{
+.card img{
+    max-width: 100%;
     
-    padding-top: 1em;
-} */
+}
 
+
+/* ********MEDIA******* */
+/* @media (max-width:800px) {
+    header { 
+    
+        background: url("images/herobanner.jpg") no-repeat;
+        width: 100%;
+        height: 460px;
+        flex-shrink: 0;
+        
+    }
+    nav{
+        background-color:#AF516B ;
+        padding: 1em 1em;
+        flex: 1 0 auto;
+        
+        
+    }
+} */

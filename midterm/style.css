@@ -84,8 +84,7 @@ body{
         margin-left: 0.75em;
         line-height: 1.25em;
         padding: 0.5em 0.60em;
-        padding-right: 2em;
-        background-color:#af516c26;
+        background-color:#a48d9426;
         border-radius: 10px;
 
     }
@@ -151,6 +150,7 @@ header {
     background-repeat: no-repeat;
     background-position: right center;
     padding-right: 2em;} 
+
 
 
 nav{

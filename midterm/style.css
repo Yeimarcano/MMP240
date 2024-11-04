@@ -253,7 +253,7 @@ footer{
 /* ********MEDIA******* */
 @media (max-width:1250px) {
     header { 
-        background: url("images/herobanner.jpg") top right no-repeat;
+        background: url("images/herobanner.jpg") no-repeat;
         width: 100%;
         height: 460px;
         flex-shrink: 0;

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin: 1em;
+    font-family: "Encode Sans Semi Expanded", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+h2, h3, p {
+    margin-bottom: 1em;
+}
+
+#wrapper{
+    max-width: 1200px;
+    margin:0 auto;
+    position: relative;
+}
+
+/* *************************HEADER******************************* */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#topMenu{
+    /* display: none; */
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 0.25em;
+    border: solid 1px black;
+    background-color: white;
+}
+
+/* **************************DROPDOWN MENU**************** */
+.dropdowm{
+    display: none;
+}
+.programNav li:hover .dropdowm{
+    display:block;
+    
+
+}

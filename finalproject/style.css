@@ -23,10 +23,19 @@ h2, h3, p {
 header{
     display: flex;
     justify-content: space-between;
+    background-color: #0033A1;
 }
+#logo { 
+    padding-top: 1em;
+    width: 200px;
+    margin-left: 0.5em;
 
+}
+.menu{
+    margin-right: 0.5em;
+}
 #topMenu{
-    /* display: none; */
+    display: none;
     position: absolute;
     right: 0;
     top: 20px;

@@ -7,6 +7,7 @@ body{
     font-style: normal;
     font-size: 1rem;
     line-height: 1.5em;
+    
 }
 
 #wrapper{
@@ -17,6 +18,7 @@ body{
 
 
 /* ******************TYPOGRAPHY***************** */
+
 .searchPrograms h2{
     margin-top: 1.5em;
     margin-bottom: 0.75em;
@@ -43,6 +45,7 @@ article{
     padding-bottom: 1em;
     border-bottom: solid 1.55px #0033A1;
     border-radius: 2px;
+    
 }
 
 .news article h2{
@@ -90,6 +93,10 @@ article a:hover{
 strong{
     font-weight: 600;
 }
+.events img{
+    width: 100%;
+}
+
 
 footer{
     margin-top: 2em;
@@ -97,7 +104,7 @@ footer{
     font-weight: 100;
 }
 
-/* *************************HEADER******************************* */
+/* *************************************************HEADER******************************* */
 header{
     display: flex;
     justify-content: space-between;
@@ -169,7 +176,11 @@ form{
 
 .dropdown{
     display: none;
-    background-color: white;
+    background-color: #fbfcff;
+    border-radius: 3px;
+}
+.programNav li:hover .dropdown{
+    display: block;
 }
 .programNav .dropdown li{
     background-color: transparent;
@@ -202,6 +213,7 @@ form{
     radial-gradient(circle, rgba(0,51,161,0.14008936093968838) 0%, rgba(0,51,161,0.6302854393710609) 100%),
      url(images/queenscollege.jpg) no-repeat top right/ cover;
     height: 200px;
+    
    
 }
 .banner h3 a{
@@ -226,9 +238,14 @@ form{
     text-decoration: none;
     color: white;
     font-weight: 500;
-    
-    
 }
+
+
+
+
+
+
+
 
 /* ***************************************************** TABLET RESPONSIVE ***************************/
 
@@ -240,25 +257,34 @@ form{
 
     #topMenu{
         display: flex;
-        background-color: #0033A1;
         border: none;
         position: static;
+        border: none;
+        padding: 0;
+
+    }
+
+    #topMenu a{
+        font-size: 0.85rem;
     }
 
     #topMenu ul{
-        display: flex;        
+        display: flex;     
     }
 
     #topMenu li{
-        margin-right: 0.75em;
+        border: none;
     }
      
-    nav:last-child{
-        margin-right: 0.5em;
+ 
+
+    
+   
+/* **********************************************dropdown menu***********************88 */
+    .searchPrograms{
+        background-color: #F4F6FF;
     }
 
-  
-/* **********************************************dropdown menu***********************88 */
     .programNav ul{
         display: flex;
         justify-content: space-between;
@@ -280,5 +306,11 @@ form{
     .programNav .dropdown li{
         width: 100%;
     }
+/* ******************************* MAIN COLUMNS*****************************88 */
+    main.home{
+        display: grid;
+        grid-template-columns:2fr 1fr;
+        column-gap: 1.5em;
 
+    }
 }   /* end of the media query */

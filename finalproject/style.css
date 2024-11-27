@@ -2,6 +2,7 @@
 
 body{
     margin: 1em;
+    margin-top: 0;
     font-family: "Encode Sans Semi Expanded", serif;
     font-weight: 400;
     font-style: normal;
@@ -22,9 +23,10 @@ body{
 .searchPrograms h2{
     margin-top: 1.5em;
     margin-bottom: 0.75em;
-    font-size: 2.25rem;
-    font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: 700;
     text-align: center;
+    color: #0033A1;
 }
 
 .searchPrograms p{
@@ -78,6 +80,9 @@ article a:hover{
     color: #FFB71B;
 }
 /* *************************EVENTS*************** */
+.events h2{
+    color: #FFB71B;
+}
 .events article h2{
     margin-top: 0.25em;
 }
@@ -130,6 +135,8 @@ header{
     border-radius: 4px;
     background-color: #0033A1;
 }
+
+
 #topMenu a{
     color: white;
     text-decoration: none;
@@ -142,7 +149,8 @@ header{
 }
 
 #topMenu li{
-    padding: 0.75em ;
+    padding: 0;
+    padding-right: 0.75em ;
     border-bottom: solid 1px white;
     border-radius: 2px;
 }
@@ -176,7 +184,7 @@ form{
 
 .dropdown{
     display: none;
-    background-color: #fbfcff;
+    background-color: #f8f9ff;
     border-radius: 3px;
 }
 .programNav li:hover .dropdown{
@@ -204,14 +212,11 @@ form{
 
 /* *****************************BANNER ******************* */
 .banner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3em;
+    padding-top: 3em;
     padding: 2em;
     background: 
     radial-gradient(circle, rgba(0,51,161,0.14008936093968838) 0%, rgba(0,51,161,0.6302854393710609) 100%),
-     url(images/queenscollege.jpg) no-repeat top right/ cover;
+     url(images/queenscollege.jpg) no-repeat top center/ cover;
     height: 200px;
     
    
@@ -230,7 +235,9 @@ form{
 }
 
 .banner .btn{
-    display: block;
+    position: relative;
+    left: 125px;
+    top: 30px;
     background-color: #FFB71B;
     padding: 0.35em 2em;
     border-radius: 80px;
@@ -241,27 +248,29 @@ form{
 }
 
 
-
-
-
-
-
-
 /* ***************************************************** TABLET RESPONSIVE ***************************/
 
 @media (min-width:768px){
 /* ***********************************MENU****************** */
+ header{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+ }
+    #logo{
+        width: 220px;
+    }
     .menu{
         display: none;
     }
-
+   
     #topMenu{
         display: flex;
         border: none;
         position: static;
+        align-self: center;
         border: none;
         padding: 0;
-
+        background-color: transparent;
     }
 
     #topMenu a{
@@ -274,14 +283,23 @@ form{
 
     #topMenu li{
         border: none;
+        margin-right: 0.5em;
+        padding: 0;
+        
     }
      
- 
+ form{
+    margin-right: 0.75em;
+    padding-left: 0;
+    padding: 0;
+ }
 
     
    
 /* **********************************************dropdown menu***********************88 */
     .searchPrograms{
+        padding: 1em;
+        padding-bottom: 3em;
         background-color: #F4F6FF;
     }
 
@@ -292,6 +310,7 @@ form{
     .programNav ul li{
         width: 32%;
         position: relative;  
+
     }
     .programNav .dropdown{
         display: none;
@@ -306,11 +325,38 @@ form{
     .programNav .dropdown li{
         width: 100%;
     }
+    /* ********************************BANNER**********8 */
+    .banner{
+        background:
+        linear-gradient(280deg, rgba(0,51,161,0) 14%, rgba(0,57,181,1) 58%),
+         url(images/queenscollege.jpg) no-repeat top right/ contain;
+    }
+  
+
+    .banner h3 {
+        width: 60%;
+        padding-top: 1em;
+        text-align: left;
+        
+    }
+    
+    .banner .btn{
+        position: relative;
+        left:0;
+        top: 30px;
+    }
+    
 /* ******************************* MAIN COLUMNS*****************************88 */
     main.home{
         display: grid;
         grid-template-columns:2fr 1fr;
         column-gap: 1.5em;
 
+    }
+    .news article{
+        background-color:#f8f9ff;
+        padding: 0.5em;
+        border-radius: 4px;
+        border-right: #FFB71B solid 1.55px;
     }
 }   /* end of the media query */

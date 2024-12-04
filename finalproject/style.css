@@ -26,6 +26,7 @@ body{
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
+    line-height: 0.95em;
     color: #0033A1;
 }
 
@@ -80,9 +81,7 @@ article a:hover{
     color: #FFB71B;
 }
 /* *************************EVENTS*************** */
-.events h2{
-    color: #FFB71B;
-}
+
 .events article h2{
     margin-top: 0.25em;
 }
@@ -246,6 +245,36 @@ form{
     color: white;
     font-weight: 500;
 }
+/* ***************************************************CARDS************************************8 */
+.card{
+    border: solid 1px black;
+}
+.card img{
+    width: 100%;
+}
+.programCards a{
+    text-decoration: none;
+    color: black;
+}
+
+.cardBody h2{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.cardBody h3,h4{
+    font-weight: 200;
+    font-size: 0.85rem;
+}
+
+.cardBody p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+
+
 
 
 /* ***************************************************** TABLET RESPONSIVE ***************************/
@@ -300,7 +329,7 @@ form{
     .searchPrograms{
         padding: 1em;
         padding-bottom: 3em;
-        background-color: #F4F6FF;
+        background-color: #F8F9FF;
     }
 
     .programNav ul{

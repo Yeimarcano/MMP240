@@ -103,9 +103,20 @@ strong{
 
 
 footer{
-    margin-top: 2em;
+    margin-top: 3em;
+    padding: 1em;
     font-size: 0.75rem;
     font-weight: 100;
+}
+
+/* ******************************************************pages */
+.category h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding: 1em 0em;
+    padding-bottom: 0.75em;
+    margin-top: 0.5em;
+    color: #0033A1;
 }
 
 /* *************************************************HEADER******************************* */
@@ -163,7 +174,7 @@ form{
 /* **************************DROPDOWN MENU**************** */
 
 .programNav li{
-    background-color: #FFB71B;
+    background-color: #0033A1;
     border-radius: 5px;
     margin-bottom: 1em;
 }
@@ -183,8 +194,10 @@ form{
 
 .dropdown{
     display: none;
-    background-color: #f8f9ff;
+    background-color: white;
     border-radius: 3px;
+   
+ 
 }
 .programNav li:hover .dropdown{
     display: block;
@@ -237,7 +250,7 @@ form{
     position: relative;
     left: 125px;
     top: 30px;
-    background-color: #FFB71B;
+    background-color: #0033A1;
     padding: 0.35em 2em;
     border-radius: 80px;
     font-size: 1rem;
@@ -246,30 +259,68 @@ form{
     font-weight: 500;
 }
 /* ***************************************************CARDS************************************8 */
-.card{
-    border: solid 1px black;
-}
-.card img{
-    width: 100%;
-}
 .programCards a{
     text-decoration: none;
     color: black;
+    border-radius: 10px;
+    border: solid 1px #fbf2de;
+    background-color: #F8F9FF;
+    transition-property: box-shadow, transform;
+    transition-duration: 0.5s;
+}
+.programCards a:hover{
+    background-color: #fbf3e1f5;
+    border-color:transparent;
+    box-shadow: 4px 4px 4px 2px rgba(200, 204, 220, 0.465);
+    transform: scale(1.10);
 }
 
+.card img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+
+}
+.card{
+    border: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.cardBody{
+    padding: 0.75em 1.25em;
+}
 .cardBody h2{
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #FFB71B;
+    margin-bottom: 0.15em;
+    margin-top: 0;
+    padding: 0;
 }
-.cardBody h3,h4{
-    font-weight: 200;
+.cardBody h3{
+    letter-spacing: 1.8px;
+    color: #0033A1;
+    text-transform: uppercase;
+    font-weight: 300;
     font-size: 0.85rem;
+    line-height: 1.5em;
+}
+.cardBody h4{
+    float: right;
+    font-weight: 200;
+    font-size: 0.95rem;
+    background-color: #0033A1;
+    border-radius: 3px;
+    padding: 0.5em 1em;
+    color: white;
+    margin-bottom: 0.75em;
+}
+.cardBody p{
+    font-size: 1.05rem;
+    font-weight: 300;
 }
 
-.cardBody p{
-    font-size: 1rem;
-    font-weight: 400;
-}
+
 
 
 
@@ -282,12 +333,10 @@ form{
 @media (min-width:768px){
 /* ***********************************MENU****************** */
  header{
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: 3em;
+    padding-bottom: 1em;
  }
-    #logo{
-        width: 220px;
-    }
+
     .menu{
         display: none;
     }
@@ -357,21 +406,22 @@ form{
     /* ********************************BANNER**********8 */
     .banner{
         background:
-        linear-gradient(280deg, rgba(0,51,161,0) 14%, rgba(0,57,181,1) 58%),
+        linear-gradient(270deg, rgba(255, 183, 27, 0.00) 32%, #FFB71B 55%),
          url(images/queenscollege.jpg) no-repeat top right/ contain;
+         height: 280px;
     }
-  
+    
 
     .banner h3 {
-        width: 60%;
-        padding-top: 1em;
+        width: 40%;
+        padding-top: 5em;
         text-align: left;
         
     }
     
     .banner .btn{
         position: relative;
-        left:0;
+        left:120px;
         top: 30px;
     }
     
@@ -388,4 +438,15 @@ form{
         border-radius: 4px;
         border-right: #FFB71B solid 1.55px;
     }
+
+
+
+/* **************************************************CARDS**************8 */
+.programCards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 380px);
+    grid-gap:1.25em;
+    grid-auto-rows: 200;
+    margin-left: 0.5em;
+}
 }   /* end of the media query */

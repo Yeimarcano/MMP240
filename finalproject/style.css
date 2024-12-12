@@ -263,13 +263,13 @@ form{
 }
 /* ***************************************************CARDS************************************8 */
 .programCards a{
-    /* display: flex; */
+    display: block;
     margin-top: 1em;
     text-decoration: none;
     color: black;
     border-radius: 10px;
-    border: solid 0.25px #fbf2de;
-    background-color: #F8F9FF;
+    border: solid 1px #fbf2de;
+    background-color: #F4F6FF;
    
 }
 

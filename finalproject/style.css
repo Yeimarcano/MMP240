@@ -139,11 +139,13 @@ header{
     display: none;
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 55px;
     padding: 1em 0.75em;
-    border: solid 2px black;
+    border: solid 1px black;
     border-radius: 4px;
-    background-color: #0033A1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+    background-color: #FFB71B;
 }
 
 
@@ -155,11 +157,11 @@ header{
 }
 
 #topMenu a:hover{
-    color: #FFB71B;
+    color: #0033A1;
 }
 
 #topMenu li{
-    padding: 0;
+    padding: 0.5em;
     padding-right: 0.75em ;
     border-bottom: solid 1px white;
     border-radius: 2px;
@@ -174,7 +176,7 @@ form{
 /* **************************DROPDOWN MENU**************** */
 
 .programNav li{
-    background-color: #0033A1;
+    background-color: #FFB71B;
     border-radius: 5px;
     margin-bottom: 1em;
 }
@@ -250,7 +252,8 @@ form{
     position: relative;
     left: 125px;
     top: 30px;
-    background-color: #0033A1;
+    background-color: #FFB71B;
+    border: solid 2px black;
     padding: 0.35em 2em;
     border-radius: 80px;
     font-size: 1rem;
@@ -260,20 +263,16 @@ form{
 }
 /* ***************************************************CARDS************************************8 */
 .programCards a{
+    /* display: flex; */
+    margin-top: 1em;
     text-decoration: none;
     color: black;
     border-radius: 10px;
-    border: solid 1px #fbf2de;
+    border: solid 0.25px #fbf2de;
     background-color: #F8F9FF;
-    transition-property: box-shadow, transform;
-    transition-duration: 0.5s;
+   
 }
-.programCards a:hover{
-    background-color: #fbf3e1f5;
-    border-color:transparent;
-    box-shadow: 4px 4px 4px 2px rgba(200, 204, 220, 0.465);
-    transform: scale(1.10);
-}
+
 
 .card img{
     width: 100%;
@@ -281,12 +280,16 @@ form{
 
 }
 .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: none;
     padding: 0;
     margin-top: 0;
 }
 
 .cardBody{
+    display: block;
     padding: 0.75em 1.25em;
 }
 .cardBody h2{
@@ -298,20 +301,23 @@ form{
     padding: 0;
 }
 .cardBody h3{
-    letter-spacing: 1.8px;
+    letter-spacing: 1.5px;
     color: #0033A1;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 0.85rem;
+    font-size: 0.72rem;
     line-height: 1.5em;
 }
-.cardBody h4{
-    float: right;
+.card h4{
+    margin-left: 80%;
+    margin-right:2% ;
+    /* margin-top:1em; */
     font-weight: 200;
+    text-align: center;
     font-size: 0.95rem;
     background-color: #0033A1;
     border-radius: 3px;
-    padding: 0.5em 1em;
+    padding: 0.45em;
     color: white;
     margin-bottom: 0.75em;
 }
@@ -356,7 +362,8 @@ form{
     }
 
     #topMenu ul{
-        display: flex;     
+        display: flex;
+        padding: 0;  
     }
 
     #topMenu li{
@@ -378,7 +385,7 @@ form{
     .searchPrograms{
         padding: 1em;
         padding-bottom: 3em;
-        background-color: #F8F9FF;
+        background: linear-gradient(180deg, #F4F6FF 0%, rgba(147, 147, 153, 0.00) 100%);
     }
 
     .programNav ul{
@@ -406,11 +413,11 @@ form{
     /* ********************************BANNER**********8 */
     .banner{
         background:
-        linear-gradient(270deg, rgba(255, 183, 27, 0.00) 32%, #FFB71B 55%),
+        linear-gradient(270deg, rgba(0, 51, 161, 0.00) 19.37%, #0033A1 49.87%),
          url(images/queenscollege.jpg) no-repeat top right/ contain;
          height: 280px;
     }
-    
+ 
 
     .banner h3 {
         width: 40%;
@@ -448,5 +455,18 @@ form{
     grid-gap:1.25em;
     grid-auto-rows: 200;
     margin-left: 0.5em;
+}
+.programCards a:hover{
+    background-color: #fbf3e1f5;
+    border-color:transparent;
+    box-shadow: 4px 4px 4px 2px rgba(200, 204, 220, 0.465);
+    
+}
+.programCards a{
+    transition-property: box-shadow, transform;
+    transition-duration: 0.5s;
+}
+.programCards a:hover{
+    transform: scale(1.10);
 }
 }   /* end of the media query */

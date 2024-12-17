@@ -46,7 +46,9 @@ body{
 article{
     margin-top: 1.5em;
     padding-bottom: 1em;
+    padding-left: 0.5em;
     border-bottom: solid 1.55px #0033A1;
+    border-left: solid 5px #FFB71B;
     border-radius: 2px;
     
 }
@@ -92,7 +94,7 @@ article a:hover{
     color: black;
 }
 .events article{
-    border-bottom: none;
+    border-bottom: solid 1.5px #FFB71B;
 }
 strong{
     font-weight: 600;
@@ -145,7 +147,7 @@ header{
     border-radius: 4px;
     border-top-right-radius: 0;
     border-bottom-right-radius:0 ;
-    background-color: #FFB71B;
+    background-color: #0033A1;
 }
 
 
@@ -157,7 +159,7 @@ header{
 }
 
 #topMenu a:hover{
-    color: #0033A1;
+    color: #FFB71B;
 }
 
 #topMenu li{
@@ -246,12 +248,11 @@ form{
 .banner h3 {
     padding-top: 1em;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 .banner .btn{
-    position: relative;
-    left: 125px;
-    top: 30px;
+    margin-left: 30%;
     background-color: #FFB71B;
     border: solid 2px black;
     padding: 0.35em 2em;
@@ -292,7 +293,7 @@ form{
     display: block;
     padding: 0.75em 1.25em;
 }
-.cardBody h2{
+.category .cardBody h2{
     font-size: 1.15rem;
     font-weight: 700;
     color: #FFB71B;
@@ -413,12 +414,11 @@ form{
     /* ********************************BANNER**********8 */
     .banner{
         background:
-        linear-gradient(270deg, rgba(0, 51, 161, 0.00) 19.37%, #0033A1 49.87%),
+        linear-gradient(270deg, rgba(56, 94, 174, 0.00) 26.38%, #385EAE 51.38%),
          url(images/queenscollege.jpg) no-repeat top right/ contain;
          height: 280px;
     }
- 
-
+   
     .banner h3 {
         width: 40%;
         padding-top: 5em;
@@ -427,9 +427,7 @@ form{
     }
     
     .banner .btn{
-        position: relative;
-        left:120px;
-        top: 30px;
+         margin-left: 10%;
     }
     
 /* ******************************* MAIN COLUMNS*****************************88 */
@@ -443,11 +441,19 @@ form{
         background-color:#f8f9ff;
         padding: 0.5em;
         border-radius: 4px;
-        border-right: #FFB71B solid 1.55px;
+        border-right: #FFB71B solid 1px;
     }
 
 
-
+/* ******************************************************pages */
+.category h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding: 0;
+    padding-bottom: 0.75em;
+    margin-top: 0;
+    color: #0033A1;
+}
 /* **************************************************CARDS**************8 */
 .programCards{
     display: grid;

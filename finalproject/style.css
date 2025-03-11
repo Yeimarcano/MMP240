@@ -15,6 +15,8 @@ body{
     max-width: 1200px;
     margin:0 auto;
     position: relative;
+    background-color: white;
+    
 }
 
 
@@ -338,6 +340,12 @@ form{
 /* ***************************************************** TABLET RESPONSIVE ***************************/
 
 @media (min-width:768px){
+    body{
+        background: linear-gradient(270deg, rgba(0,51,161,0) 38%, rgba(0,51,161,0.7500666770614496) 100%),
+        linear-gradient(90deg, rgba(0,51,161,0) 38%, rgba(0,51,161,0.7500666770614496) 100%),
+     url(images/cunybanner.jpg) repeat  fixed top left/100%;
+    }
+
 /* ***********************************MENU****************** */
  header{
     padding-top: 3em;
@@ -431,10 +439,14 @@ form{
     }
     
 /* ******************************* MAIN COLUMNS*****************************88 */
+    main{
+        margin: 0 20px
+    }
     main.home{
         display: grid;
         grid-template-columns:2fr 1fr;
         column-gap: 1.5em;
+
 
     }
     .news article{
@@ -457,7 +469,7 @@ form{
 /* **************************************************CARDS**************8 */
 .programCards{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 380px);
+    grid-template-columns: repeat(auto-fill, 365px);
     grid-gap:1.25em;
     grid-auto-rows: 200;
     margin-left: 0.5em;
